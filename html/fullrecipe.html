@@ -12,6 +12,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>BakedBread</title>
   </head>
   <body>
@@ -99,5 +100,42 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      ScrollReveal().reveal(".recipepage_main_info", {
+        origin: "right",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".breads1", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "10rem",
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".breads4", {
+        origin: "top",
+        duration: 1000,
+        distance: "10rem",
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".ingredientpage_info", {
+        origin: "left",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".ingredientpage_photo", {
+        scale: 0,
+        duration: 1000,
+        delay: 400,
+        reset: true,
+      });
+    </script>
   </body>
 </html>

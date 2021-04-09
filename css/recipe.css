@@ -9,14 +9,15 @@ body {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* HomePage */
 
 .RecipePage {
-  background-image: url(/images/recipebackground.png);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  border: 1px solid white;
+  background-color: #26262e;
+  height: 100%;
+  border: 1px solid #26262e;
 }
 
 .Navbar {
@@ -33,7 +34,7 @@ body {
 }
 
 .logo {
-  color: black;
+  color: white;
   font-family: "Balthazar", serif;
   font-size: 20px;
   letter-spacing: 2px;
@@ -117,6 +118,7 @@ body {
 
 .ingredientpage {
   display: grid;
+  grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   height: 80vh;
 }
@@ -246,4 +248,119 @@ footer {
 .footer-logo.fa-bread-slice {
   font-size: 15px;
   margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  .recipepage_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .recipepage_bread_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .recipepage_bread_photo img {
+    height: 280px;
+    width: auto;
+  }
+
+  .recipepage_main_info {
+    height: 100%;
+    text-align: center;
+  }
+
+  .recipepage_main_info h3 {
+    font-size: 40px;
+  }
+
+  .recipepage_main_info p {
+    font-size: 12px;
+  }
+  .breads4 {
+    margin-bottom: 0rem;
+  }
+
+  .breads1 {
+    margin-top: 0rem;
+  }
+
+  .ingredientpage {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ingredientpage_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .ingredientpage_info p {
+    font-size: 12px;
+  }
+
+  .ingredientpage_photo img {
+    height: 300px;
+    width: auto;
+    padding-top: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .recipepage_bread_photo img {
+    height: 250px;
+    width: auto;
+  }
+
+  footer {
+    height: 50vh;
+  }
+
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .footersocial {
+    text-align: center;
+    align-self: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo.fa-bread-slice {
+    font-size: 18px;
+  }
+  .navbar-ul li a {
+    font-size: 14px;
+  }
 }

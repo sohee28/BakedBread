@@ -9,9 +9,12 @@ body {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* HomePage */
 
-.RecipePage {
+.MenuPage {
   height: 100vh;
   border: 1px solid white;
 }
@@ -276,4 +279,108 @@ footer {
 .footer-logo.fa-bread-slice {
   font-size: 15px;
   margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  .menupage_main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .menupage_info h3 {
+    font-size: 45px;
+  }
+
+  .menupage_photo img {
+    height: 300px;
+    width: auto;
+  }
+  .menupage_favor_title {
+    padding-bottom: 3rem;
+  }
+  .menupage_favoritebread {
+    height: 100%;
+    width: auto;
+    margin-top: 10rem;
+  }
+  .menupage_favoritebread img {
+    height: 150px;
+  }
+
+  .menupage_favor_main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .menupage_favor_main_photo {
+    padding: 1rem 4rem;
+  }
+
+  .photo1,
+  .photo3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .photo1,
+  .photo3 {
+    text-align: start;
+  }
+  .menupage_info button {
+    width: 135px;
+    font-size: 12px;
+    padding: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .menupage_photo img {
+    height: 300px;
+    width: auto;
+    padding-top: 3rem;
+  }
+
+  footer {
+    height: 50vh;
+  }
+
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .footersocial {
+    text-align: center;
+    align-self: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo.fa-bread-slice {
+    font-size: 18px;
+  }
+  .navbar-ul li a {
+    font-size: 14px;
+  }
 }

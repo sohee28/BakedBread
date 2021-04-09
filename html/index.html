@@ -11,6 +11,8 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>BakedBread</title>
   </head>
   <body>
@@ -45,7 +47,7 @@
     <section class="ourstory" id="ourstory">
       <div class="storycontainer">
         <img src="../images/baguette.jpeg" alt="" />
-        <div class="ourstory_info">
+        <div class="ourstory_info animation-right">
           <h1>Our Story</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat
@@ -89,8 +91,8 @@
       </div>
       <div class="menuphotos">
         <div class="menuphoto1">
-          <img src="../images/bread2.jpeg" alt="" />
-          <img src="../images/crowasan.jpeg" alt="" />
+          <img class="menuphoto1_1" src="../images/bread2.jpeg" alt="" />
+          <img class="menuphoto1_2" src="../images/crowasan.jpeg" alt="" />
         </div>
         <div class="menuphoto2">
           <img src="../images/cookie.jpeg" alt="" />
@@ -127,5 +129,69 @@
         </div>
       </div>
     </footer>
+
+    <script>
+
+      ScrollReveal().reveal(".storycontainer img", {
+        reset: true,
+        delay: 100,
+        scale: 0,
+        opacity: 1,
+        duration: 1000,
+      });
+      ScrollReveal().reveal(".animation-right", {
+        origin: "right",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto1_2", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto1_1", {
+        origin: "top",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto2", {
+        origin: "right",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuinfos", {
+        origin: "left",
+        duration: 1000,
+        distance: "15rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle h1", {
+        origin: "top",
+        duration: 1000,
+        distance: "1rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle a", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "1rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle h1", {
+        reset: true,
+        origin: "top",
+      });
+    </script>
   </body>
 </html>

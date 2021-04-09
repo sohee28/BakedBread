@@ -12,6 +12,7 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>BakedBread</title>
   </head>
   <body>
@@ -57,7 +58,7 @@
       </div>
       <div class="menupage_favor_main">
         <div class="menupage_favor_main_photo photo1">
-          <div class="menupage_favor_main_info">
+          <div class="menupage_favor_main_info info-left">
             <h5 class="menu_favor_main_title">Bread</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -69,7 +70,7 @@
         </div>
         <div class="menupage_favor_main_photo photo2">
           <img src="../images/cinnamonchip.jpg" alt="" />
-          <div class="menupage_favor_main_info">
+          <div class="menupage_favor_main_info info-right">
             <h5 class="menu_favor_main_title">Bread</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -79,7 +80,7 @@
           </div>
         </div>
         <div class="menupage_favor_main_photo photo3">
-          <div class="menupage_favor_main_info">
+          <div class="menupage_favor_main_info info-left">
             <h5 class="menu_favor_main_title">Bread</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -91,7 +92,7 @@
         </div>
         <div class="menupage_favor_main_photo photo4">
           <img src="../images/plain.jpg" alt="" />
-          <div class="menupage_favor_main_info">
+          <div class="menupage_favor_main_info info-right">
             <h5 class="menu_favor_main_title">Bread</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -132,5 +133,40 @@
         </div>
       </div>
     </footer>
+    <script>
+      ScrollReveal().reveal(".menuinfo", {
+        origin: "left",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menupage_photo", {
+        scale: 0,
+        duration: 1000,
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menupage_favor_main_photo img", {
+        scale: 0,
+        duration: 1000,
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".info-left", {
+        origin: "left",
+        duration: 1000,
+        distance: "15rem",
+        delay: 800,
+        reset: true,
+      });
+      ScrollReveal().reveal(".info-right", {
+        origin: "right",
+        duration: 1000,
+        distance: "15rem",
+        delay: 800,
+        reset: true,
+      });
+    </script>
   </body>
 </html>
